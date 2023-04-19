@@ -180,7 +180,7 @@ int main() {
 
 		handle_input(&inputBuffer, &info);
 
-		if (inputBuffer.mode == INPUT_MODE_OFF) {
+		if (inputBuffer.mode == INPUT_MODE_OFF && info.currentField != NULL) {
 			if (IsKeyPressed(KEY_TAB)) {
 				list* fields = list_new();
 				root_node_get_fields(info.root, fields, &info.format);
