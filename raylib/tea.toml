@@ -6,5 +6,5 @@ authors = []
 [dependencies]
 glfw = { path = "glfw" }
 
-[defines.all]
+[defines]
 PLATFORM_DESKTOP = ""
